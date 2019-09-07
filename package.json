@@ -1,0 +1,28 @@
+{
+  "name": "reactive-action-transport-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-generation": "dts-generator --project . --out index.d.ts",
+    "build-test": "npm run build && npm run type-generation",
+    "release": "npm run build-test && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejayes/reactive-action-transport-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodejayes/reactive-action-transport-data/issues"
+  },
+  "homepage": "https://github.com/nodejayes/reactive-action-transport-data#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3",
+    "dts-generator": "^3.0.0"
+  }
+}

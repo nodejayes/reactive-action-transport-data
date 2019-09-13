@@ -2,6 +2,6 @@ import {DispatchType} from './dispatch-type';
 
 export interface IWebSocketAction<T> {
     type: string;
-    payload: T;
+    payload?: T;
     dispatchOn: DispatchType;
 }
